@@ -108,15 +108,14 @@ const UpdateModal = ({ book, event }) => {
               />
             </Form.Group>
             <Button variant='primary' type='submit' className='ps-3 pe-3'>
-              Añadir
+              Actualizar
             </Button>
           </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant='secondary' onClick={handleClose}>
-            Close
+            Cancelar
           </Button>
-          <Button variant='primary'>Understood</Button>
         </Modal.Footer>
       </Modal>
     </>
