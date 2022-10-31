@@ -20,7 +20,7 @@ const AddModal = ({ event }) => {
       impresion: data.get('impresion'),
     }
 
-    axios.post('http://localhost:8000/books', book).then(() => event())
+    axios.post(`${process.env.REACT_APP_API_URL}/books`, book).then(() => event())
 
     handleClose()
   }

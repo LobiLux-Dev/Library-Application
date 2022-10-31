@@ -6,7 +6,7 @@ const Books = () => {
   const [books, setBooks] = useState([])
 
   const getBooks = () => {
-    axios.get('http://localhost:8000/books').then(response => {
+    axios.get(`${process.env.REACT_APP_API_URL}/books`).then(response => {
       setBooks(response.data)
     })
   }

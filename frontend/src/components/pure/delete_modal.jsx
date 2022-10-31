@@ -7,7 +7,7 @@ const DeleteModal = ({ event, book }) => {
   const [show, setShow] = useState(false)
 
   const handleDelete = () => {
-    axios.delete(`http://localhost:8000/books/${id}`).then(() => event())
+    axios.delete(`${process.env.REACT_APP_API_URL}/books/${id}`).then(() => event())
     handleClose()
   }
 

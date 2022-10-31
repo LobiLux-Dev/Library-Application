@@ -22,7 +22,7 @@ const UpdateModal = ({ book, event }) => {
     }
 
     axios
-      .put(`http://localhost:8000/books/${id}`, book)
+      .put(`${process.env.REACT_APP_API_URL}/books/${id}`, book)
       .then(response => event())
 
     handleClose()
